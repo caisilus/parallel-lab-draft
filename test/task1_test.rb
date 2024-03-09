@@ -20,4 +20,13 @@ class TestTask1 < Minitest::Test
 
     assert_equal results, [2, 4, 6, 8]
   end
+
+  def test_that_with_thread_works_fast
+    results = nil
+    assert_runs_faster(1.5) do
+      results = @task1.using_threads
+    end
+
+    assert_equal [2, 4, 6, 8], results, 'using_threads should return array of correct results'
+  end
 end

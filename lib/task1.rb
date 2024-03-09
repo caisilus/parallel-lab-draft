@@ -14,6 +14,11 @@ class Task1
   end
 
   def using_threads
-    nil
+    @elements.map { |el| slow_io_in_thread(el) }
+             .map(&:value)
+  end
+
+  def slow_io_in_thread(element)
+    Thread.new { slow_io_task(element) }
   end
 end
