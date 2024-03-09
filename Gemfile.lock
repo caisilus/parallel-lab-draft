@@ -1,0 +1,36 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    debug (1.9.1)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
+    io-console (0.7.2)
+    irb (1.12.0)
+      rdoc
+      reline (>= 0.4.2)
+    language_server-protocol (3.17.0.3)
+    minitest (5.22.2)
+    prism (0.24.0)
+    psych (5.1.2)
+      stringio
+    rdoc (6.6.2)
+      psych (>= 4.0.0)
+    reline (0.4.3)
+      io-console (~> 0.5)
+    ruby-lsp (0.14.5)
+      language_server-protocol (~> 3.17.0)
+      prism (>= 0.22.0, < 0.25)
+      sorbet-runtime (>= 0.5.10782)
+    sorbet-runtime (0.5.11286)
+    stringio (3.1.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  debug (~> 1.9)
+  minitest (~> 5.22)
+  ruby-lsp (~> 0.14.5)
+
+BUNDLED WITH
+   2.4.22
